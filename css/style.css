@@ -105,6 +105,8 @@ linear-gradient(180deg, rgba(0,30,38,0.8127626050420168) 0%, rgba(0,48,41,0.7147
 
 
 /* FOOTER SECTION */
-.footer {
+.footer-section {
   background-image: url("/img/footer-image.png");
+  background-position: center;
+  background-size: cover;
 }
