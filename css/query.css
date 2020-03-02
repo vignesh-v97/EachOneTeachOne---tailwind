@@ -1,11 +1,47 @@
 /* Small (sm) */
-@media (min-width: 640px) { /* ... */ }
+@media (min-width: 640px) {
+    .video-sizing{
+        height:500px;
+        width:800px;
+    }
+}
 
 /* Medium (md) */
-@media (min-width: 768px) { /* ... */ }
+@media (min-width: 768px) {
+    /* ... */
+}
+
+@media (max-width: 1024px) {
+    .about-us-heading {
+        top: 5% !important;
+    }
+}
 
 /* Large (lg) */
-@media (min-width: 1024px) { /* ... */ }
+@media (min-width: 1024px) {
+    .features-heading {
+        left: 28% !important;
+        top: 35%;
+        font-size: 6rem !important;
+    }
+
+    .features-icon {
+        font-size: 2.5rem;
+    }
+
+    .about-us-heading {
+        left: 10% !important;
+        top: 42%;
+        display: inline-block !important;
+        font-size: 6rem !important;
+    }
+
+    .carousel {
+        margin-left: 25%;
+    }
+}
 
 /* Extra Large (xl) */
-@media (min-width: 1280px) { /* ... */ }
+@media (min-width: 1280px) {
+    /* ... */
+}

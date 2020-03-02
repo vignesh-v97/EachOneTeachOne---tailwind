@@ -11,7 +11,7 @@
 
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/grid.css">
-    <!-- <link rel="stylesheet" href="css/query.css"> -->
+    <link rel="stylesheet" href="css/query.css">
     <link rel="stylesheet" href="css/tailwind.min.css">
     <link rel="icon" href="img/logo-dark.png" type="image/png" sizes="16x16">
 
@@ -19,13 +19,13 @@
     <title>EachOneTeachOne</title>
 </head>
 
-<body>
+<body class="overflow-x-hidden">
     <!-- HEADER SECTION -->
     <header class="header w-screen h-screen bg-cover bg-center relative flex items-center justify-center">
         <div class="header__heading flex flex-col justify-center items-center text-center">
-            <img src="img/logo-dark.png" alt="logo" class="w-24">
+            <img src="img/logo-dark.png" alt="logo" class="w-24 md:w-32 lg:w-48">
 
-            <p class="p-16 text-white px-3 sm:px-12 md:w-4/5">
+            <p class="p-16 text-white px-3 sm:px-12 md:w-4/5 lg:w-11/12 lg:text-3xl">
                 Welcome to the world of,
                 Each One Teach One, where
                 the technology teaching
@@ -36,35 +36,36 @@
 
 
     <!-- ABOUT US SECTION -->
-    <section class="bg-white py-20 w-screen h-screen">
-        <div class="flex justify-center items-center text-teal-500 text-3xl font-extrabold w-full">
+    <section class="bg-white w-screen h-screen relative flex flex-col justify-center">
+      <div>
+        <div class="about-us-heading flex justify-center items-center text-teal-500 text-3xl font-extrabold w-full absolute">
             ABOUT<span class="text-gray-700">&nbsp;US</span></div>
 
         <div class="flex flex-col items-center mt-6">
-            <div class="w-full rounded overflow-x-hidden flex snap-x text-lg font-bold" style="height:50vh">
-                <div class="snap-start w-full h-full flex items-center justify-center text-white flex-shrink-0 bg-teal-500 px-4"
+            <div class="carousel w-full lg:w-8/12 rounded overflow-x-hidden flex snap-x text-lg font-bold" style="height:50vh">
+                <div class="snap-start w-full h-full flex items-center justify-center text-white flex-shrink-0 bg-teal-500 lg:px-64 text-xl lg:text-3xl"
                     id="slide-1">
                     Each One Teach One is a compendium of minds with the keenest insight
                     for learning and sharing of knowledge – a vibrant community of young
                     developers based out of Chennai, Tamil Nadu.
                 </div>
-                <div class="snap-start w-full h-full flex items-center justify-center text-white flex-shrink-0 bg-teal-500 px-4"
+                <div class="snap-start w-full h-full flex items-center justify-center text-white flex-shrink-0 bg-teal-500 lg:px-64 text-xl lg:text-3xl"
                     id="slide-2">
                     We at Each One Teach One believe at our core that language
                     is the key driving factor that binds the education and all spectrum of knowledge training.
                 </div>
-                <div class="snap-start w-full h-full flex items-center justify-center text-white flex-shrink-0 bg-teal-500 px-4"
+                <div class="snap-start w-full h-full flex items-center justify-center text-white flex-shrink-0 bg-teal-500 lg:px-64 text-xl lg:text-3xl"
                     id="slide-3">
                     Education when delivered in language of nativity, ease and choice it fosters
                     a fervent sense of belonging and connects us to an individual – carrying on the message
                     we strive and founded our adventure in curating learning programs in Tamil
                 </div>
-                <div class="snap-start w-full h-full flex items-center justify-center text-white flex-shrink-0 bg-teal-500 px-4"
+                <div class="snap-start w-full h-full flex items-center justify-center text-white flex-shrink-0 bg-teal-500 lg:px-64 text-xl lg:text-3xl"
                     id="slide-4">
                     Our little voyage into this big foray started with one goal – to break the language barrier –
                     and build a sustainable, easy, accessible knowledge database and programming language training.
                 </div>
-                <div class="snap-start w-full h-full flex items-center justify-center text-white flex-shrink-0 bg-teal-500 px-4"
+                <div class="snap-start w-full h-full flex items-center justify-center text-white flex-shrink-0 bg-teal-500 lg:px-64 text-xl lg:text-3xl"
                     id="slide-5">
                     Every programming language training program of ours strives to better
                     the learning experience by cultivating an easy approach via vernacular language.
@@ -85,43 +86,44 @@
             </div>
         </div>
 
+      </div>
 
     </section>
 
 
     <!-- SECTION FEATURES | WHAT WE DO? -->
     <section class="bg-teal-400 flex rounded relative w-screen h-screen relative">
-        <div class="flex flex-col align-center w-11/12 justify-center text-white bg-teal-600 mt-32 ml-4 pt-6 rounded"
+        <div class="flex flex-col align-center w-11/12 justify-center text-white bg-teal-600 mt-32 ml-4 pt-6 rounded lg:w-3/4"
             style="height: 65vh">
-            <div class="flex flex-wrap">
-                <div class="w-full rounded">
+            <div class="flex flex-wrap md:w-1/2 mx-auto lg:mx-auto">
+                <div class="w-full sm:w-3/6 rounded mx-auto md:flex flex-col justify-center text-center md:mb-16">
                     <i class="features-icon fas fa-video pl-2 pr-4 float-left"></i>
-                    <a href="#" class="heading-tertiary">Video Based E-Learning
+                    <a href="#" class="heading-tertiary text-small lg:text-2xl lg:font-bold hover:text-teal-400">Video Based E-Learning
                         Courses
                     </a>
                 </div>
-                <div class="feature-box w-full rounded">
+                <div class="feature-box w-full sm:w-3/6 rounded md:flex flex-col justify-center text-center md:mb-16">
                     <i class="features-icon fas fa-book pl-2 pr-4 float-left"></i>
-                    <a href="#" class="heading-tertiary">Original Content
+                    <a href="#" class="heading-tertiary text-small lg:text-2xl lg:font-bold hover:text-teal-400">Original Content
                         Development
                     </a>
                 </div>
-                <div class="feature-box w-full rounded">
+                <div class="feature-box w-full sm:w-3/6 rounded md:flex flex-col justify-center text-center md:mb-16">
                     <i class="features-icon fas fa-book pl-2 pr-4 float-left"></i>
-                    <a href="#" class="heading-tertiary">Personal and Corporate
+                    <a href="#" class="heading-tertiary text-small lg:text-2xl lg:font-bold hover:text-teal-400">Personal and Corporate
                         Training Programs</a>
                 </div>
-                <div class="feature-box w-full rounded">
+                <div class="feature-box w-full sm:w-3/6 rounded md:flex flex-col justify-center text-center md:mb-16">
                     <i class="features-icon fas fa-chalkboard-teacher pl-2 pr-4 float-left"></i>
-                    <a href="#" class="heading-tertiary">Coaching and Mentorship</a>
+                    <a href="#" class="heading-tertiary text-small lg:text-2xl lg:font-bold hover:text-teal-400">Coaching and Mentorship</a>
                 </div>
-                <div class="feature-box w-full rounded">
+                <div class="feature-box w-full sm:w-3/6 rounded md:flex flex-col justify-center text-center md:mb-16">
                     <i class="features-icon fas fa-chalkboard pl-2 pr-4 float-left"></i>
-                    <a href="#" class="heading-tertiary">Expert - led Live Classes</a>
+                    <a href="#" class="heading-tertiary text-small lg:text-2xl lg:font-bold hover:text-teal-400">Expert - led Live Classes</a>
                 </div>
-                <div class="feature-box w-full rounded">
+                <div class="feature-box w-full sm:w-3/6 rounded md:flex flex-col justify-center text-center md:mb-16">
                     <i class="features-icon fas fa-book pl-2 pr-4 float-left"></i>
-                    <a href="#" class="heading-tertiary">Workshops</a>
+                    <a href="#" class="heading-tertiary text-small lg:text-2xl lg:font-bold hover:text-teal-400">Workshops</a>
                 </div>
             </div>
             <div
@@ -134,27 +136,28 @@
     <!-- VIDEO SECTION -->
     <section class="video-section w-screen h-screen flex flex-col justify-center align-center">
         <div class="flex justify-center">
-            <iframe src="https://www.youtube.com/embed/k1w63tVUUZ4" class="w-11/2 flex justify-center" style="height: 40vh;">
+            <iframe src="https://www.youtube.com/embed/k1w63tVUUZ4" class="video-sizing flex justify-center">
             </iframe>
         </div>
 
         <a href="https://www.youtube.com/channel/UCte3T1asC3Qw2i56UbQCTgA"
-            class="bg-teal-500 w-2/5 mx-auto p-2 rounded-full flex justify-center text-blue-800 font-bold mt-12 font-bold hover:bg-teal-500 hover:text-white"
+            class="bg-teal-500 w-2/5 sm:w-1/12 mx-auto p-2 rounded-full flex justify-center text-blue-800 font-bold mt-12 font-bold hover:bg-teal-500 hover:text-white"
             target="blank">view more</a>
     </section>
 
 
     <!-- MENTOR SECTION -->
-    <section class="mentor-section flex flex-col align-center bg-teal-400 w-full h-screen">
+    <section class="mentor-section flex flex-col justify-center bg-teal-400 w-full h-screen">
+       <div class="flex flex-col align-center justify-center lg:flex-row">
         <div class="mentor-img">
-            <img src="img/mentor-img.png" alt="mentor photo" class="mentor-photo w-2/5 my-5 relative object-cover">
+            <img src="img/mentor-img.png" alt="mentor photo" class="mentor-photo w-2/5 lg:w-1/2 lg:h-64 lg:w-auto my-5 relative object-cover">
         </div>
 
         <div class="mentor-content w-11/12 mx-auto text-center">
-            <h2 class="mentor-name text-blue-700 font-bold pb-2">Rajavasanthan</h2>
-            <h3 class="mentor-degination text-blue-700 font-bold pb-3">Founder & Mentor - Grids And Guides |
+            <h2 class="mentor-name text-blue-700 font-bold lg:font-extrabold lg:text-3xl pb-2">Rajavasanthan</h2>
+            <h3 class="mentor-degination text-blue-700 font-bold lg:font-extrabold lg:text-2xl pb-3">Founder & Mentor - Grids And Guides |
                 EachOneTeachOne</h3>
-            <p class="about-mentor text-blue-900">Entrepeneur, Passionate About
+            <p class="about-mentor text-blue-900 lg:font-semibold lg:text-xl">Entrepeneur, Passionate About
                 Programming, Trainer, & Fullstack
                 Developer.
                 Vasanth Is An Highly Motivated And Goal Oriented Professional, With Over 10 Years Of Combined
@@ -166,31 +169,36 @@
                 He Also Speak At Conferences, Podcasts, And Blog About Various Web Devlopment Tools On A Regular
                 Basis.</p>
         </div>
+       </div>
     </section>
 
 
     <!-- FOOTER SECTION -->
-    <footer class="footer-section w-full py-8" style="height: 40vh;">
-        <div class="footer-social-media flex flex-col">
-            <img src="img/logo-dark.png" class="footer-logo w-1/4 mb-4 flex text-center mx-auto alt="logo">
-            <div class="footer-social__media flex mx-auto mb-8">
+    <footer class="footer-section w-full py-8 lg:flex flex-row items-center">
+        <div class="footer-social-media flex flex-col lg:w-1/2">
+            <img src="img/logo-dark.png" class="footer-logo w-1/5 mb-4 text-center mx-auto" alt="logo">
+            <div class="footer-social__media flex mx-auto mb-4">
                 <div class="facebook">
                     <a href="https://www.facebook.com/EoneTone/?ref=settings" class="hover:text-teal-400"
-                        target="blank"><img src="img/facebook.png" class="social-media-logo w-8" alt="Facebook"></a>
+                        target="blank"><i class="fab fa-facebook-square text-4xl pr-4 text-white"></i></a>
                 </div>
                 <div class="instagram">
                     <a href="https://www.instagram.com/eachoneteachoneindia/" class="hover:text-teal-400"
-                        target="blank"><img src="img/instagram.png" class="social-media-logo w-8 instagram-logo"
-                            alt="Instagram"></a>
+                        target="blank"><i class="fab fa-instagram-square text-4xl pr-4 text-white"></i></a>
                 </div>
                 <div class="youtube">
                     <a href="https://www.youtube.com/channel/UCte3T1asC3Qw2i56UbQCTgA/featured"
-                        class="hover:text-teal-400" target="blank"><img src="img/youtube.png"
-                            class="social-media-logo w-8 youtube-logo" alt="Youtube"></a>
+                        class="hover:text-teal-400" target="blank"><i class="fab fa-youtube-square text-4xl pr-4 text-white"></i></a>
                 </div>
             </div>
+            <div class="text-white text-center text-blue-400">
+                <p>Contact:</p>
+                <p>+91 9751919991</p>
+                <a href="kaarthick@gridsandguides.com">kaarthick@gridsandguides.com</a>
+            </div>
         </div>
-        <a href="https://www.gridsandguides.com/" target="blank" class="copyright text-teal-400 flex justify-center font-medium hover:text-white">©
+        <a href="https://www.gridsandguides.com/" target="blank"
+            class="copyright text-teal-400 flex justify-center font-medium hover:text-white">©
             Grids and Guides 2020 Rights Reserved</a>
     </footer>
 </body>
