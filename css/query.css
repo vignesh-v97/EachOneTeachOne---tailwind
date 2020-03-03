@@ -1,26 +1,71 @@
-/* Small (sm) */
-@media (min-width: 640px) {
-    .video-sizing{
-        height:500px;
-        width:800px;
+@media (min-width: 638px) {
+    .video-sizing {
+        height: 500px;
+        width: 800px;
+    }
+
+    .view-more-btn {
+        width: 15% !important;
     }
 }
 
-/* Medium (md) */
-@media (min-width: 768px) {
-    /* ... */
+@media (max-width: 638px) {
+    .swiper-button-next,
+    .swiper-button-prev{
+        display: none !important;
+    }
+    .swiper-pagination {
+        position: absolute;
+        left: 45%;
+        bottom: -15%;
+    }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 638px) {
+    .what-we-do-topics {
+        padding-left: 10% !important;
+    }
+}
+
+@media (min-width: 1031px) {
+    .what-we-do-heading-top {
+        display: none;
+    }
+
+    .what-we-do-container {
+        padding-right: 8rem !important;
+    }
+
+    .about-us-heading-top {
+        display: none;
+    }
+}
+
+@media (max-width: 1030px) {
+    .what-we-do-heading {
+        display: none;
+    }
+
+    .what-we-do-container {
+        padding-right: 0 !important;
+    }
+
     .about-us-heading {
-        top: 5% !important;
+        display: none;
     }
 }
+
+@media (min-width: 1325px) {
+    /* .what-we-do-container {
+        padding-right: 15rem !important;
+    } */
+}
+
 
 /* Large (lg) */
-@media (min-width: 1024px) {
+@media (min-width: 1015px) {
     .features-heading {
-        left: 28% !important;
+        right: 4% !important;
         top: 35%;
         font-size: 6rem !important;
     }
@@ -29,15 +74,28 @@
         font-size: 2.5rem;
     }
 
+    .about-head-parent {
+        width: 28.333333% !important;
+    }
+
+    .about-us-heading-about {
+        left: 50% !important;
+        top: 5%;
+        font-size: 6rem !important;
+    }
+
     .about-us-heading {
-        left: 10% !important;
-        top: 42%;
-        display: inline-block !important;
+        left: 0% !important;
+        top: 5%;
         font-size: 6rem !important;
     }
 
     .carousel {
-        margin-left: 25%;
+        margin-left: 33%;
+    }
+
+    .carousel-content {
+        padding: 19rem !important;
     }
 }
 
@@ -45,3 +103,5 @@
 @media (min-width: 1280px) {
     /* ... */
 }
+
+@media (min-width: 1590px) {}

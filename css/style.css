@@ -35,19 +35,15 @@
 
 /* Utilities */
 
-.absCenter{
-  position: absolute;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.width-height {
+  width: 100vw;
+  height: 100vh;
 }
-
 
 /* ------------------------------------------- */
 
-
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* REUSABLE COMPONENTS */
@@ -57,30 +53,43 @@ a {
 }
 
 .mentor-photo {
-  left: 31%;
+  left: 35%;
 }
 
 
 /* HEADER */
 .header {
-  background-image:
-linear-gradient(180deg, rgba(0,30,38,0.8127626050420168) 0%, rgba(0,48,41,0.7147233893557423) 100%, rgba(5,114,115,0.6839110644257703) 100%),
-  url("/img/boy-reading.png");
+  background-image: linear-gradient(180deg, rgba(0, 30, 38, 0.8127626050420168) 0%, rgba(0, 48, 41, 0.7147233893557423) 100%, rgba(5, 114, 115, 0.6839110644257703) 100%),
+    url("/img/children_excited.jpg");
   font-family: 'Josefin Sans';
   font-size: 16px !important;
   font-weight: 700;
   text-transform: uppercase;
 }
 
-.header--text-container{
+.header--text-container {
   opacity: .9;
 
 
 }
 
 /* ABOUT US SECTION */
+.about-us-heading {
+  font-size: 5rem;
+}
 
-
+.swiper-pagination {
+  left: 50%;
+  bottom: -5%;
+}
+.swiper-pagination-bullet {
+  width: 15px !important;
+  height: 15px !important;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  color: #fff !important;
+}
 
 /*  SECTION FEATURES | WHAT WE DO? */
 
@@ -96,6 +105,32 @@ linear-gradient(180deg, rgba(0,30,38,0.8127626050420168) 0%, rgba(0,48,41,0.7147
 .features-heading {
   top: 2%;
 }
+
+.c-features-heading{
+  font-size: 5rem;
+  top: 75%;
+  z-index: 11 !important;
+}
+
+.feature-left-text{
+  font-size: 5rem;
+  top: 75%;
+  z-index: 11 !important;
+}
+
+@media (max-width:1637px) {
+  .what-we-do-heading {
+    font-size: 4rem !important;
+    transform: translateY(15px);
+  }
+}
+@media (max-width:1335px) {
+  .what-we-do-heading {
+    font-size: 3rem !important;
+    transform: translateY(33px) !important;
+  }
+}
+
 
 .video-section {
   background-color: #ffffff;
@@ -114,3 +149,7 @@ linear-gradient(180deg, rgba(0,30,38,0.8127626050420168) 0%, rgba(0,48,41,0.7147
   background-position: center;
   background-size: cover;
 }
+
+
+/* ====== */
+
