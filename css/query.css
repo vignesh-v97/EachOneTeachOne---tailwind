@@ -50,7 +50,7 @@
         padding-right: 0 !important;
     }
 
-    .about-us-heading {
+    .about-us-heading-about {
         display: none;
     }
 }
@@ -79,7 +79,6 @@
     }
 
     .about-us-heading-about {
-        left: 50% !important;
         top: 5%;
         font-size: 6rem !important;
     }
