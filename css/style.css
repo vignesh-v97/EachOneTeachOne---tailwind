@@ -79,6 +79,9 @@ a {
 .five-rem {
   font-size: 5rem;
 }
+.two-rem {
+  font-size: 2rem;
+}
 
 .swiper-pagination {
   left: 50%;
