@@ -67,7 +67,18 @@
         left:20% !important;
     }
 }
-
+@media (max-width:950px) {
+    .about-mentor {
+        line-height: 2 !important;
+        font-size: 1.2rem !important;
+    }
+}
+@media (max-width:650px) {
+    .about-mentor {
+        line-height: 1.4 !important;
+        font-size: 1rem !important;
+    }
+}
 
 
 /* Large (lg) */

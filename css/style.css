@@ -76,6 +76,9 @@ a {
 .about-us-heading {
   font-size: 5rem;
 }
+.five-rem {
+  font-size: 5rem;
+}
 
 .swiper-pagination {
   left: 50%;
