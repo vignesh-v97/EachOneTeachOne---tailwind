@@ -55,11 +55,19 @@
     }
 }
 
-@media (min-width: 1325px) {
-    /* .what-we-do-container {
-        padding-right: 15rem !important;
-    } */
+@media (min-width: 950px) {
+    .about-mentor {
+        line-height: 1.5 !important;
+        font-size: 1.5rem !important;
+    }
 }
+
+@media (min-width: 1023px) {
+    .mentor-photo {
+        left:20% !important;
+    }
+}
+
 
 
 /* Large (lg) */

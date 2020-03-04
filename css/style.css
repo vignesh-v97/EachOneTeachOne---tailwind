@@ -43,7 +43,8 @@
 /* ------------------------------------------- */
 
 body {
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Josefin Sans';
 }
 
 /* REUSABLE COMPONENTS */
@@ -69,8 +70,6 @@ a {
 
 .header--text-container {
   opacity: .9;
-
-
 }
 
 /* ABOUT US SECTION */
@@ -90,7 +89,9 @@ a {
 .swiper-button-prev {
   color: #fff !important;
 }
-
+.swiper-pagination-bullet-active {
+  background-color: #285e61 !important;
+}
 /*  SECTION FEATURES | WHAT WE DO? */
 
 .features-icon {
@@ -154,7 +155,11 @@ a {
   line-height: normal !important;
   font-size: 18px !important;
 }
-
+.about-mentor {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  margin-top: 2%;
+}
 
 /* FOOTER SECTION */
 .footer-section {
@@ -162,7 +167,3 @@ a {
   background-position: center;
   background-size: cover;
 }
-
-
-/* ====== */
-
