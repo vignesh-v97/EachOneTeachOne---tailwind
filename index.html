@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="css/query.css">
     <link rel="stylesheet" href="css/tailwind.min.css">
     <link rel="icon" href="img/logo-dark.png" type="image/png" sizes="16x16">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <script src="https://kit.fontawesome.com/cc4e66cf6b.js" crossorigin="anonymous"></script>
     <title>EachOneTeachOne</title>
@@ -21,16 +22,18 @@
 <body class="overflow-x-hidden" id="home">
     <!-- HEADER SECTION -->
     <header class="width-height header bg-cover bg-center relative flex items-center justify-center">
+        <!-- <div data-aos="fade-up"> -->
         <div class="absolute">
-            <img src="img/logo-dark.png" alt="logo" class="w-16 md:w-20 top-0 left-0 m-6 md:m-12 fixed z-10">
+            <img src="img/logo-dark.png" alt="logo" class="opacity-0 logo-desktop w-16 md:w-20 top-0 left-0 m-6 md:m-12 fixed z-10">
         </div>
+    <!-- </div> -->
         <div class="absolute">
             <a href="#home" class="hover:text-teal-400 mr-3">
                 <i
                     class="text-teal-700 pr-4 fas fa-home text-3xl md:text-4xl w-8 top-0 right-0 mt-10 mr-6 md:mt-16 fixed z-10"></i>
             </a>
         </div>
-        <div class="header__heading flex flex-col justify-center items-center text-center">
+        <div class="fixed heroText header__heading flex flex-col justify-center items-center text-center">
             <img src="img/logo-dark.png" alt="logo" class="w-24 hidden sm:block md:w-32 lg:w-48">
 
             <p class="p-16 text-white px-3 sm:px-12 md:w-4/5 lg:w-11/12 lg:text-3xl">
@@ -45,7 +48,7 @@
     <!-- ABOUT SECTION -->
     <section class="md:py-32 pb-20">
 
-        <div class="two-rem font-extrabold text-teal-800 z-10 py-16 text-center lg:hidden">
+        <div class="two-rem font-extrabold text-teal-800 z-0 py-16 text-center lg:hidden">
             ABOUT <span class="text-teal-600">US</span>
         </div>
 
@@ -179,7 +182,7 @@
     <!-- VIDEO SECTION -->
     <section class="video-section flex flex-col py-32 pt-16 align-center">
         <div class="flex justify-center py-12">
-            <iframe src="https://www.youtube.com/embed/k1w63tVUUZ4" class="video-sizing flex justify-center">
+           <iframe src="" class="video-sizing c-video-player flex justify-center">
             </iframe>
         </div>
         <a href="https://www.youtube.com/channel/UCte3T1asC3Qw2i56UbQCTgA"
@@ -296,5 +299,93 @@
         }
     });
 </script>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="http://remysharp.com/downloads/jquery.inview.js"></script>
+<!-- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> -->
+<script type = "text/javascript">
+$(document).ready(function(){
+    $(window).scroll(function(){
+        console.log('working');
+        if($(this).scrollTop() > 0){
+            $(".logo-desktop").css({"opacity":"1"})
+            $(".heroText").css({"opacity":"0"})
+        }
+        else{
+            $(".heroText").css({"opacity":"1"})
+            $(".logo-desktop").css({"opacity":"0"})
 
+        }
+    });
+})
+
+let options = {
+  root: document.querySelector('#scrollArea'),
+  rootMargin: '0px',
+  threshold: 1.0
+}
+
+
+
+function handler(entries, observer) {
+  for (entry of entries) {
+    console.log(entry);
+
+    if(entry.isIntersecting){
+     document.querySelector('.c-video-player').src="https://www.youtube.com/embed/k1w63tVUUZ4?autoplay=1";
+    }
+
+    // statusText.textContent = entry.isIntersecting;
+
+    // if (entry.isIntersecting) {
+    //   statusBox.className = "yes";
+    // } else {
+    //   statusBox.className = "no";
+    // }
+  }
+}
+
+/* By default, invokes the handler whenever:
+   1. Any part of the target enters the viewport
+   2. The last part of the target leaves the viewport */
+
+let observer = new IntersectionObserver(handler);
+observer.observe(document.querySelector(".video-section"));
+
+
+</script>
+<!-- <script>
+    let logoDesk = document.querySelector('.logo-desktop');
+    let opacityVal = -1;
+
+    let heroText = document.querySelector('.heroText');
+    let opacity = 1;
+    
+    document.addEventListener('scroll',(e)=>{
+        const scrolled = window.scrollY;
+        console.log(scrolled,"<=========");
+        if(100 <= scrolled && scrolled <= 800 )
+        {
+        opacityVal += 0.0250;
+        opacity -= 0.0450;
+        }
+        else if(scrolled > 800){
+        opacity = 0;
+        opacityVal = 1;
+        }
+        else if(scrolled < 100 )
+        {
+            opacity = 1;
+            opacityVal = 0;
+        }
+        console.log(opacityVal);
+        heroText.style.opacity = opacity;
+        logoDesk.style.opacity = opacityVal;
+        
+    })
+  </script> -->
+    <!-- if ($('#element').visible(true)) {
+        style.diplay = none;
+    } else {
+        style.display = block;
+    } -->
 </html>
